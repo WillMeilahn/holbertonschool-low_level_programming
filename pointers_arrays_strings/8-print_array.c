@@ -8,7 +8,7 @@
 
 /**
  * print_array - Prints an inputed number of elements
- * 		 of an array of integers.
+ *               of an array of integers.
  * @a: The array of integers.
  * @n: The number of elements to be printed.
  */
@@ -25,4 +25,6 @@ void print_array(int *a, int n)
 
 		printf(", ");
 	}
+
+	printf("\n");
 }

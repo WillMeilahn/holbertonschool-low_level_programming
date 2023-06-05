@@ -5,7 +5,7 @@
  * File: main.h
  * Auth: William A Meilahn
  * Desc: Header file containing prototypes for all functions
- *       used in the 0x04-pointers_arrays_strings directory.
+ *       used in the pointers_arrays_strings directory.
  */
 
 #include <stdlib.h>

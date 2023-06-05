@@ -1,5 +1,4 @@
 /*
- * File: 9-strcpy.c
  * Auth: William A Meilahn
  */
 

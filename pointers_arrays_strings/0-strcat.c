@@ -4,7 +4,8 @@
  */
 
 #include "main.h"
-#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
 /**
  * strcat - Concatenates the string pointed to by @src, including the

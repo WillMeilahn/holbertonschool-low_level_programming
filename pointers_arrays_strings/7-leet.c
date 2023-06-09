@@ -9,18 +9,23 @@
  */
 char *leet(char *str)
 {
-	int i = 0;
-	int a;
-	char leet[8] = {'0', 'L', '?', 'E', 'A', '?', '?', 'T'};
+	int count = 0, i;
+	int low_letters[] = {97, 101, 111, 116, 108};
+	int upp_letters[] = {65, 69, 79, 84, 76};
+	int numbers[] = {52, 51, 48, 55, 49};
 
-	while (str[i])
+	while (*(str + count) != '\0')
 	{
-		for (a = 0; a <= 7; a++)
+		for (i = 0; i < 5; i++)
 		{
-			if (str[i] == leet[a] || str[i] - 32 == leet[a])
-				str[i] = a + '0';
+			if (*(str + count) == low_letters[i] || *(str + count) == upp_letters[i])
+			{
+				*(str + count) = numbers[i];
+				break;
+			}
 		}
-		i++;
+		count++;
 	}
+
 	return (str);
 }

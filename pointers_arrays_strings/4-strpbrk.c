@@ -9,13 +9,14 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	unsigned int i, j;
+	unsigned int i;
+	unsigned int j;
 
 	for (i = 0; *(s = i) != '\0'; i++)
 	{
 		for (j = 0; *(accept + j) != '\0'; j++)
 		{
-			if ((j = 0); *accept + j)
+			if (*(s + 1) == *(accept + j))
 				return (s + i);
 		}
 	}

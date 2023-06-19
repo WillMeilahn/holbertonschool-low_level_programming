@@ -1,10 +1,45 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
-#include <string.h>
 
+/**
+ * _strcmp - Compares two strings
+ * @s1: The first string
+ * @s2: The second string
+ *
+ * Return: int value
+ */
 int _strcmp(char *s1, char *s2)
 {
-	return strcmp(s1, s2);
+	int a = 0;
+	int b = 0;
+	int c = 0;
+	int d = 0;
+	int lim;
+
+	while (s1[a])
+		a++;
+
+	while (s2[b])
+		b++;
+
+	if (a <= b)
+		lim = a;
+
+	else
+		lim = b;
+
+	while (c <= lim)
+	{
+		if (s1[c] == s2[c])
+		{
+			c++;
+			continue;
+		}
+		else
+		{
+			d = s1[c] - s2[c];
+			break;
+		}
+		c++;
+	}
+	return (d);
 }

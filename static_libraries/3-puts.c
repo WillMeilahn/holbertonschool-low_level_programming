@@ -1,10 +1,18 @@
-#include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
-#include <string.h>
+/*
+ * File: 3-puts.c
+ * Auth: William A Meilahn
+ */
 
-void _puts(char *s)
+#include "main.h"
+
+/**
+ * _puts - Prints a string to stdout.
+ * @str: The string to be printed.
+ */
+void _puts(char *str)
 {
-	puts(s);
+	while (*str)
+		_putchar(*str++);
+
+	_putchar('\n');
 }
